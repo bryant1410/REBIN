@@ -1,15 +1,15 @@
-#REBIN
+# REBIN
 RESTful API server and configuration dashboard - Builds RESTful endpoints for parameterized binary/script and command input and output
 
-##What is REBIN?
+## What is REBIN?
 Creating a web service really should be this easy. Doesn't matter if you program in C, C++, Python, Ruby or even C# Mono. Expose the functionality of your app or script in just a few seconds with an API endpoint.
 
-##Basic Use Case
+## Basic Use Case
 You have already or have created a CLI based application or script. It takes input, it produces output. Now, how do you expose your work to the web so you can utilize via a web service. REBIN takes care of that! 
 
 REBIN Also supports files as input and output.
 
-##Technologies
+## Technologies
 [node.js](http://nodejs.org/) - Node.js is a platform built on Chrome's JavaScript runtime for easily building fast, scalable network applications. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices.
 
 For installation instructions please refer to:
@@ -30,8 +30,8 @@ For installation instructions please refer to:
 
 [backbone.js](http://backbonejs.org/) - Backbone.js gives structure to web applications by providing models with key-value binding and custom events, collections with a rich API of enumerable functions, views with declarative event handling, and connects it all to your existing API over a RESTful JSON interface.
 
-##Platforms & Full Installation Instructions
-###OSX
+## Platforms & Full Installation Instructions
+### OSX
 
 Using homebrew. Everyone should use homebrew. http://mxcl.github.com/homebrew/
   
@@ -87,9 +87,9 @@ Start REBIN
   
     $ nodemon app.js
     
-####REBIN is now running: See Dashboard section
+#### REBIN is now running: See Dashboard section
 
-###LINUX
+### LINUX
 
 Install Node.js 
 
@@ -162,9 +162,9 @@ Issue the command to start.
 
     $ sudo start rebin
     
-####REBIN is now running
+#### REBIN is now running
 
-##Dashboard
+## Dashboard
 
 * Open your browser to: http://localhost:3000/
     
@@ -172,7 +172,7 @@ You should see: (The fields will be blank) Enter the credentials you defined whe
 
 <a href="http://www.flickr.com/photos/95752811@N04/8738566529/" title="login by NyströmAnthony, on Flickr"><img src="http://farm8.staticflickr.com/7281/8738566529_830f39b993.jpg" width="305" height="294" alt="login"></a>
  
-###Basic Example
+### Basic Example
 
 Using ystock.py as a script example: 
 
@@ -189,10 +189,10 @@ OUTPUT:
     {'stock_exchange': '"NasdaqNM"', 'market_cap': '262.3B', '200day_moving_avg': '711.306', '52_week_high': '808.97', 'price_earnings_growth_ratio': '1.27', 'price_sales_ratio': '5.21', 'price': '795.53', 'earnings_per_share': '32.214', '50day_moving_avg': '754.295', 'avg_daily_volume': '2364040', 'volume': '3511036', '52_week_low': '556.52', 'short_ratio': '1.30', 'price_earnings_ratio': '24.60', 'dividend_yield': 'N/A', 'dividend_per_share': '0.00', 'price_book_ratio': '3.65', 'ebitda': '16.278B', 'change': '+3.07', 'book_value': '217.332'}
 
 -
-#####Let's get the above working as a RESTful endpoint!
+##### Let's get the above working as a RESTful endpoint!
 
 
-###Preparing executables and Security
+### Preparing executables and Security
 
 Executables can only be run from:
 
@@ -214,7 +214,7 @@ R
 
     #!/usr/bin/Rscript
 
-#####Using ystock as an example:
+##### Using ystock as an example:
 
 Within the REBIN dashboard, first click: Add New Endpoint, first thing you will see is a dialog. This is where you select your executable. Assuming you follow the default file structure, your executables will be shown. In this example, the executables from this repo. After clicking on python/ystock.py click on OK.
 
@@ -244,7 +244,7 @@ Which you can either enter directly in to a browser or simply use cURL:
 	
 That's it!
 
-##Debug
+## Debug
 
 The dashboard provides a Debug section that will aid in resolving any issues you may encounter with a specific endpoint and parameters associated.
 
@@ -271,10 +271,10 @@ Intridea
   
 [Website](http://www.intridea.com)  
 
-##License
+## License
 
 MIT License. See LICENSE for details.
 
-##Copyright
+## Copyright
 
 Copyright (c) 2013 Intridea, Inc.
